@@ -1,0 +1,327 @@
+#car_map_div {
+	width: 100%;
+	height: 245px;
+	background: white;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#car_map_frame {
+	width: 100%;
+	height: 100%;
+}
+
+#car_map_loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+	z-index: 100;
+    background: rgba(0, 0 , 0, 0.5);
+    top: 0;
+    left: 0;
+    flex-flow: column;
+    justify-content: center;
+    display: flex;
+}
+
+#car_map_loading > img {
+	height: 40%;
+}
+
+#car_part_table {
+	width: 100%;
+	height: 500px;
+	overflow-y: auto;
+	display: none;
+}
+
+#car_part_table tr {
+    cursor: pointer;
+}
+
+#car_part_table tr:hover {
+    background-color: lightgray;
+}
+
+#car_part_table th {
+	background: #1254ff;
+	color: white;
+	font-weight: 200;
+}
+
+#car_part_table td  {
+	color: #3a4351;
+	font-weight: 200;
+}
+
+#kbb_price_div, #salvage_price_div, #fee_price_div {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#kbb_price_div .tile-header, #salvage_price_div .tile-header, 
+#fee_price_div .tile-header, #carpart_price_div .tile-header, 
+#carparts-table .tile-header, #history_div .tile-header {
+	width: 100%;
+	display: block;
+	background-color: #48BF53;
+}
+
+#kbb_price_div .tile-header h2 {
+	width: 100%;
+}
+
+#valuation-section input {
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#lot-price {
+	cursor: pointer;
+	font-size: 14px;
+	float: right;
+}
+
+#car_part_frame {
+	height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: rgba(1, 1, 1, 0.8);
+    z-index: 1000;
+    display: none;
+}
+
+#car_part_frame iframe {
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+}
+
+#price_type, #price_list, #salvage_percent {
+	border: none;
+	background: transparent;
+	color: black;
+}
+
+#price_list {
+	float: right;
+	margin-right: 15px;
+}
+
+#salvage_price_panel {
+	width: 100%;
+}
+
+#salvage_percent {
+	padding: 1px 3px;
+	margin-left: 15px;
+}
+
+#salvage-price, #auction_fee_price {
+	float: right;
+	font-size: 14px;
+}
+
+#current_kbb_price {
+	margin-left: 15px;
+	font-size: 14px;
+}
+
+#fee_price_panel {
+	width: 100%;
+}
+
+#fee_price_panel span {
+	float: right;
+}
+
+#auction_fee {
+	margin-right: 15px;
+}
+
+#bid_price {
+	margin-left: 15px;
+	width: 100px;
+	color: black;
+	padding: 0 0.5rem;
+}
+
+#kbb_price_panel {
+	/*font-size: 1.4rem;*/
+}
+
+#car_part {
+	position: relative;
+	width: 100%;
+	display: none;
+}
+
+#back-map-btn {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+#sub-img-group {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+#trade_history_div {
+	padding: 0.75rem;
+}
+
+#trade_history_div .sale-table-head, #trade_history_div .sale-table-content a {
+	display: flex;
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+	text-decoration: none;
+}
+
+#trade_history_div .sale-table-head {
+	font-size: 15px;
+}
+
+#trade_history_div .sale-table-content a .py-2 {
+	font-weight: 100;
+	color: black;
+}
+
+#trade_history_div .py-2 {
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+}
+
+.carpart-price {
+    float: right;
+    font-weight: 700;
+}
+
+#carpart_price_list .carpart_price_item {
+    font-size: 14px;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#carpart_price_list .carpart_price_item:last-child {
+	border: none;
+}
+
+#carparts_list_panel {
+	width: 100%;
+}
+
+#total_carpart_price {
+	float: right;
+}
+
+#labor_total {
+	float: right;
+}
+
+.carpart_price_div_class .tile-header {
+	width: 100%;
+    display: block;
+    background-color: rgb(72, 191, 83);
+}
+
+#carparts-table {
+	/* padding-left: 15px; */
+}
+
+.carparts-list {
+	display: table;
+}
+
+.carparts-list .carparts-group {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.carparts-list .carparts-group > div {
+	margin-bottom: 10px;
+}
+
+.c-image {
+	text-align: center;
+}
+
+.c-image img {
+	width: 100px;
+	height: 100px;
+}
+
+.c-brand > span:first-child {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.c-price {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 1255px) and ( max-width: 1510px ) {
+	#kbb_price_panel, #lot-price {
+		font-size: 13px !important;
+	}
+	#price_list {
+		margin-top: 0.45rem;
+	}
+}
+
+@media screen and (min-width: 1285px) and ( max-width: 1336px ) {
+	#kbb_price_panel, #lot-price {
+		font-size: 13px !important;
+	}
+	#price_list {
+		margin-top: 0.45rem;
+	}
+}
+
+@media screen and (min-width: 1201px) and ( max-width: 1284px ) {
+	#kbb_price_panel, #lot-price {
+		font-size: 12px !important;
+	}
+	#price_list {
+		margin-top: 0.45rem;
+	}
+}
+
+@media screen and (min-width: 1076px) and ( max-width: 1200px ) {
+	#kbb_price_panel, #lot-price {
+		font-size: 9px !important;
+	}
+	#kbb_price_panel > select {
+		font-size: 9 !important;
+	}
+	#price_list {
+		margin-top: 0.45rem;
+	}
+}
+
+@media screen and (min-width: 880px) and ( max-width: 991px ) {
+	#kbb_price_panel, #lot-price {
+		font-size: 12px !important;
+	}
+	#price_list {
+		margin-top: 0.45rem;
+	}
+}
+
+@media screen and (min-width: 814px) and ( max-width: 879px ) {
+	#kbb_price_panel, #lot-price {
+		font-size: 9px !important;
+	}
+	#price_list {
+		margin-top: 0.45rem;
+	}
+}

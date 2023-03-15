@@ -1,0 +1,114 @@
+#runvin-panel {
+  position: fixed;
+  height: 100vh;
+  width: auto;
+  background-color: #f8f8f8;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  text-align: center;
+  display: none;
+  width: 380px;
+}
+
+#vin-error {
+  display: none;
+  color: red;
+  text-align: left;
+  padding-left: 5px;
+}
+
+#r-close {
+  float: right;
+  width: 35px;
+  height: 33px;
+  cursor: pointer;
+}
+
+#r-close > img {
+  width: 100%;
+}
+
+#runvin-panel > h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.run-search-group {
+  padding: 5px;
+}
+
+.run-search-group > * {
+  margin: 3.5px;
+}
+
+#r-vin {
+  width: 170px;
+  font-size: 14px;
+  padding: 3px;
+}
+
+#r-mile {
+  width: 90px;
+  font-size: 14px;
+  padding: 3px;
+}
+
+#r-search {
+  font-size: 17px;
+  border: 1px solid #767676;
+  background-color: #f0f0f0;
+}
+
+.run-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 96%;
+  margin: auto;
+}
+
+.run-table td,
+.run-table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.run-table tr:nth-child(even) {
+  background-color: #e7e7e7;
+}
+
+.run-login-group {
+  text-align: left;
+  padding: 5px;
+}
+
+.run-login-group > div {
+  background-color: #e7e7e7;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.run-login-group > div > p {
+  margin: 5px auto;
+  font-size: 18px;
+}
+
+.run-login-group > div > input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.run-login-group #rv-login {
+  width: 100%;
+  background: #524f4f;
+  color: white;
+  font-size: 17px;
+  padding: 8px;
+  border: none;
+}
+
+#rv-login-err{
+  color: red;
+}

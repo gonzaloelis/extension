@@ -1,0 +1,49 @@
+{
+    "name": "RunVIN",
+    "description": "Extension to compare others",
+    "version": "1.4.5",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting", "tabs", "contextMenus"],
+    "icons": {
+        "16": "/images/icon16.png",
+        "32": "/images/icon32.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "run_at" : "document_end",
+            "matches": ["https://www.copart.com/*"],
+            "css": ["/css/copart.css"],
+            "js": ["/js/juery-3.6.6.min.js", "/js/comnon.js", "/js/copart-script.js"],
+            "all_frames": true
+        },
+        {
+            "run_at" : "document_end",
+            "matches": ["https://www.iaai.com/*"],
+            "css": ["/css/iaai.css"],
+            "js": ["/js/juery-3.6.6.min.js", "/js/comnon.js", "/js/iaai-script.js"],
+            "all_frames": true
+        },
+        {
+            "run_at" : "document_end",
+            "matches": ["<all_urls>"],
+            "css": ["/css/runvin.css"],
+            "js": ["/js/juery-3.6.6.min.js", "/js/comnon.js", "/js/runvin.js"],
+            "all_frames": true
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "images/*", "js/*" ],
+            "matches": ["<all_urls>"],
+            "use_dynamic_url": true
+        }
+    ],
+    "host_permissions": [
+        "https://api.usautoparts.io/*"
+    ]
+}
